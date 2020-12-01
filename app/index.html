@@ -5,21 +5,21 @@
  .screen{
    background-color:gray;
    border:solid black 1px;
-   width:170px;
-   height:80px;
+   width:93%;
+   height:25%;
  }
  .special{
    background-color:orange;
    border:solid blue 1px;
-   width:40px;
-   height:30px;
+   width:23%;
+   height:15%;
    
  }
  .normal{
    background-color:white;
    border:solid green 1px;
-   width:40px;
-   height:30px;
+   width:23%;
+   height:15%;
  }
 </style>
 <script>
@@ -30,7 +30,9 @@
    function clr(e){
    scr.value=""
    } 
-   
+   function calc(){
+     scr.value=eval(scr.value)
+   }
  
 </script>
 </head>
@@ -58,7 +60,7 @@
  <br/>
  <input class="normal" type="button"  value="0" onclick="lclick(this)"> 
   <input class="special" type="button"  value="." onclick="lclick(this)"> 
-  <input class="special" type="button"  value="=" > 
+  <input class="special" type="button"  value="=" onclick="calc()"> 
  <input class="special" type="button"  value="+" onclick="lclick(this)">
  <br/>    
   
